@@ -1,0 +1,229 @@
+/* ===== reset style ===== */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img { 
+    background: transparent; 
+    border: 0; 
+    font-size: 100%;
+    margin: 0;
+    outline: 0; 
+    padding: 0; 
+    vertical-align: baseline; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: normal; 
+}
+
+/* ===== include fonts ===== */
+
+@font-face {
+    font-family: "PTSans Regular";
+    src: url("../fonts/PT Sans/pt_sans-web-regular-webfont.eot");
+    src: url("../fonts/PT Sans/pt_sans-web-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/PT Sans/pt_sans-web-regular-webfont.woff") format("woff"),
+         url("../fonts/PT Sans/pt_sans-web-regular-webfont.ttf") format("truetype"),
+         url("../fonts/PT Sans/pt_sans-web-regular-webfont.svg#pt_sansregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadPro Regular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+         url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===== clearfix ===== */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* ===== body style ===== */
+
+body {
+    font-family: "MyriadPro Regular","PTSans Regular", sans-serif;
+    font-size: 16px;
+    height: 2000px;
+    padding-top: 200px;
+}
+
+/* ===== main content style ===== */
+/* ===== main content atricle  style ===== */
+
+.main-content-container {
+    position: relative;
+    margin: 0 auto;
+    width: 562px;
+}
+
+.page {
+    position: absolute;
+    border: 2px solid #000;
+    height: 750px;
+    box-sizing: border-box;
+    width: 523px;
+}
+
+.page:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 107px;
+    height: 31px;
+    border: 2px solid #000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dark-grey-page {
+    background-color: #acacac;
+    top: 39px;
+    left: 40px;
+}
+
+.dark-grey-page:after {
+    background-color: #00aeef;
+    right: -18px;
+    top: 46px;
+}
+
+.grey-page {
+    background-color: #ccc;
+    top: 20px;
+    left: 20px;
+    width: 524px;
+}
+
+.grey-page:after {
+    background-color: #39b54a;
+    right: -50px;
+    top: 41px;
+}
+
+.main-page {
+    background-color: #ebebeb;
+    padding: 33px 32px 0 30px;
+}
+
+.main-page:after {
+    background-color: #f68e56;
+    right: -84px;
+    top: 38px;
+}
+
+.main-content {
+    margin-bottom: 16px;
+}
+
+.main-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 13px;
+}
+
+.main-content .left-img {
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 22px;
+    margin-left: 2px;
+}
+
+.main-content .right-img {
+    float: right;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main-content p {
+    font-size: 0.75em;
+}
+
+.main-content p:last-of-type {
+    line-height: 1.3;
+}
+
+.main-content p:nth-of-type(2) {
+    margin-bottom: 15px;
+}
+
+/* ===== main content joke section style ===== */
+
+.joke-section {
+    margin-bottom: 26px;
+}
+
+.joke-section h3 {
+    font-size: 1.125em;
+    margin-bottom: 20px;
+}
+
+.joke-left {
+    float: left; 
+}
+
+.joke-right {
+    float: right;
+}
+
+.joke-left:not(:nth-last-child(2)), .joke-right:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+/* ===== main content footer style ===== */
+
+.main-page-footer p {
+    text-align: center;
+    font-size: 0.5625em;
+}
+
+/* ===== social buttons block  ===== */
+
+.soc-btns-container {
+    position: fixed;
+    width: 90px;
+    height: 71px;
+    background-color: #fbaf5d;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    right: 1px;
+    bottom: 10%;
+    padding-top: 6px;
+}
+
+.soc-btns-container h4 {
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.soc-btns-container .soc-btn {
+    display: block;
+    float: left;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    background-image: url("../img/spritesheet.png")
+}
+
+.soc-btns-container .btn-fb {
+    background-color: #4e71a8;
+    margin-left: 7px;
+    background-position: -8px -8px;
+}
+
+.soc-btns-container .btn-tw {
+    background-color: #1cb7eb;
+    background-position: -79px -6px;
+}
+
+.soc-btns-container .btn-in {
+    background-color: #444444;
+    background-position: -45px -9px;
+}
