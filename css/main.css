@@ -109,6 +109,7 @@ body {
 }
 
 .main-page {
+    position: relative;
     background-color: #ebebeb;
     padding: 33px 32px 0 30px;
 }
